@@ -6,7 +6,7 @@ public class Pyramid {
         if(num <= 0 || num > 9) {
             return null;
         }
-        int[][] result = new  int[num][num*2-1];
+        int[][] result = new int[num][num*2-1];
 
          for (int i = 0;i< num;i++){
             for(int j = 0; j < num; j++){

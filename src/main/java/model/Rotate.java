@@ -20,20 +20,20 @@ public class Rotate {
 
     public static int[][] rotate(int[][] inputArray){
 
-        int lengOfArray = inputArray.length;
+        int lengthOfArray = inputArray.length;
 
         // check for square
-        for (int i =0; i < inputArray.length; i++){
-            if(inputArray[i].length != lengOfArray) {
+        for (int[] anInputArray : inputArray) {
+            if (anInputArray.length != lengthOfArray) {
                 return null;
             }
         }
 
-        int[][] result = new int[lengOfArray][lengOfArray];
+        int[][] result = new int[lengthOfArray][lengthOfArray];
 
-        for(int i = 0; i < lengOfArray; i++){
-            for(int j = 0; j < lengOfArray; j++){
-                result[i][j] = inputArray[j][lengOfArray - i - 1];
+        for(int i = 0; i < lengthOfArray; i++){
+            for(int j = 0; j < lengthOfArray; j++){
+                result[i][j] = inputArray[j][lengthOfArray - i - 1];
             }
         }
 

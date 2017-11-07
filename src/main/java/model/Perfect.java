@@ -9,18 +9,17 @@ public class Perfect {
             return null;
         }
 
-        int resultLenght = 0;
+        int resultLength = 0;
 
         for (int i = 0; i < perf.length; i++){
             if(perf[i] <= num){
-                resultLenght = i+1;
+                resultLength = i+1;
             }
         }
 
-        result = new int[resultLenght];
-        for(int i =0;i < resultLenght;i++ ){
-            result[i]=perf[i];
-        }
+        result = new int[resultLength];
+        System.arraycopy(perf,0,result,0,resultLength);
+
         return result;
 
     }
