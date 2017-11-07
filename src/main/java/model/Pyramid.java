@@ -3,7 +3,7 @@ package model;
 public class Pyramid {
 
     public static int[][] getPyrimid(int num) {
-        if(num < 0 || num > 9) {
+        if(num <= 0 || num > 9) {
             return null;
         }
         int[][] result = new  int[num][num*2-1];
