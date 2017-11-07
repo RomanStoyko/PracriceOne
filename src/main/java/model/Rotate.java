@@ -20,6 +20,10 @@ public class Rotate {
 
     public static int[][] rotate(int[][] inputArray){
 
+        if( inputArray == null){
+            return null;
+        }
+
         int lengthOfArray = inputArray.length;
 
         // check for square
